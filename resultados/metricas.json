@@ -1,0 +1,21 @@
+{
+  "precisao_em_5_so_imagenet": 0.9445,
+  "precisao_em_5_depois_do_treino": 0.9578,
+  "acuracia_classificacao_teste": 0.9613,
+  "categorias": [
+    "relógio",
+    "notebook",
+    "fone de ouvido",
+    "câmera",
+    "cadeira",
+    "caneca",
+    "luminária",
+    "guarda-chuva",
+    "tesoura",
+    "celular"
+  ],
+  "imagens": {
+    "treino": 300,
+    "teste": 465
+  }
+}

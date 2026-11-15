@@ -1,0 +1,24 @@
+[project]
+name = "recomendacao-por-imagens"
+version = "1.0.0"
+description = "Recomendação de produtos por semelhança visual, com embeddings de uma rede treinada em TensorFlow."
+requires-python = ">=3.10"
+dependencies = ["tensorflow>=2.16", "tensorflow-datasets>=4.9", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools]
+packages = ["recomendacao"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 140
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E402"]
